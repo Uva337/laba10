@@ -64,7 +64,7 @@ def select(people):
             count += 1
             print('Фамилия:', peop.get('surname', ''))
             print('Имя:', peop.get('name', ''))
-            print('Номер телефона:', peop.get('number', ''))
+            print('Номер телефона:', peop.get('number', ''), sorted(key=lambda x: int(str(x)[:3])))
             print('Дата рождения:', peop.get('year', ''))
 
     if count == 0:
